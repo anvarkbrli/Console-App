@@ -1,0 +1,5 @@
+C:\Users\Acer\Desktop\APA103\ConsoleApp\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\Desktop\APA103\ConsoleApp\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.AssemblyInfoInputs.cache
+C:\Users\Acer\Desktop\APA103\ConsoleApp\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.AssemblyInfo.cs
+C:\Users\Acer\Desktop\APA103\ConsoleApp\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Desktop\APA103\ConsoleApp\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.sourcelink.json
