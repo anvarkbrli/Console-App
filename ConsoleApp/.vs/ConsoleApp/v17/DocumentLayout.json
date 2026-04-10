@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14BDDB1C-0617-403B-BF0D-3180CD78C31F}|ConsoleApplication\\ConsoleApplication.csproj|c:\\users\\acer\\desktop\\15-consoleapp\\consoleapp\\consoleapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14BDDB1C-0617-403B-BF0D-3180CD78C31F}|ConsoleApplication\\ConsoleApplication.csproj|solutionrelative:consoleapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14BDDB1C-0617-403B-BF0D-3180CD78C31F}|ConsoleApplication\\ConsoleApplication.csproj|c:\\users\\acer\\desktop\\15-consoleapp\\consoleapp\\consoleapplication\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14BDDB1C-0617-403B-BF0D-3180CD78C31F}|ConsoleApplication\\ConsoleApplication.csproj|solutionrelative:consoleapplication\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D80728BB-5A9C-4932-AAFB-92AF2D0D0067}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\acer\\desktop\\15-consoleapp\\consoleapp\\servicelayer\\services\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D80728BB-5A9C-4932-AAFB-92AF2D0D0067}|ServiceLayer\\ServiceLayer.csproj|solutionrelative:servicelayer\\services\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14BDDB1C-0617-403B-BF0D-3180CD78C31F}|ConsoleApplication\\ConsoleApplication.csproj|c:\\users\\acer\\desktop\\15-consoleapp\\consoleapp\\consoleapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14BDDB1C-0617-403B-BF0D-3180CD78C31F}|ConsoleApplication\\ConsoleApplication.csproj|solutionrelative:consoleapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D80728BB-5A9C-4932-AAFB-92AF2D0D0067}|ServiceLayer\\ServiceLayer.csproj|c:\\users\\acer\\desktop\\15-consoleapp\\consoleapp\\servicelayer\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,56 +17,29 @@
     {
       "AbsoluteMoniker": "D:0:0:{32F37ACA-1A65-4790-A829-25ADB59997A0}|RepositoryLayer\\RepositoryLayer.csproj|c:\\users\\acer\\desktop\\15-consoleapp\\consoleapp\\repositorylayer\\repositories\\implementations\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32F37ACA-1A65-4790-A829-25ADB59997A0}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\repositories\\implementations\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32F37ACA-1A65-4790-A829-25ADB59997A0}|RepositoryLayer\\RepositoryLayer.csproj|c:\\users\\acer\\desktop\\15-consoleapp\\consoleapp\\repositorylayer\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32F37ACA-1A65-4790-A829-25ADB59997A0}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\repositories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3E0CAD4-247C-4BEE-A5D2-34C13E688AFC}|DomainLayer\\DomainLayer.csproj|c:\\users\\acer\\desktop\\15-consoleapp\\consoleapp\\domainlayer\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3E0CAD4-247C-4BEE-A5D2-34C13E688AFC}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3E0CAD4-247C-4BEE-A5D2-34C13E688AFC}|DomainLayer\\DomainLayer.csproj|c:\\users\\acer\\desktop\\15-consoleapp\\consoleapp\\domainlayer\\entities\\coursegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3E0CAD4-247C-4BEE-A5D2-34C13E688AFC}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\entities\\coursegroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32F37ACA-1A65-4790-A829-25ADB59997A0}|RepositoryLayer\\RepositoryLayer.csproj|c:\\users\\acer\\desktop\\15-consoleapp\\consoleapp\\repositorylayer\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32F37ACA-1A65-4790-A829-25ADB59997A0}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32F37ACA-1A65-4790-A829-25ADB59997A0}|RepositoryLayer\\RepositoryLayer.csproj|c:\\users\\acer\\desktop\\15-consoleapp\\consoleapp\\repositorylayer\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32F37ACA-1A65-4790-A829-25ADB59997A0}|RepositoryLayer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3E0CAD4-247C-4BEE-A5D2-34C13E688AFC}|DomainLayer\\DomainLayer.csproj|c:\\users\\acer\\desktop\\15-consoleapp\\consoleapp\\domainlayer\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3E0CAD4-247C-4BEE-A5D2-34C13E688AFC}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3E0CAD4-247C-4BEE-A5D2-34C13E688AFC}|DomainLayer\\DomainLayer.csproj|c:\\users\\acer\\desktop\\15-consoleapp\\consoleapp\\domainlayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3E0CAD4-247C-4BEE-A5D2-34C13E688AFC}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\RepositoryLayer\\Repositories\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "RepositoryLayer\\Repositories\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\RepositoryLayer\\Repositories\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "RepositoryLayer\\Repositories\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "GroupController.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\ConsoleApplication\\Controllers\\GroupController.cs",
+              "RelativeDocumentMoniker": "ConsoleApplication\\Controllers\\GroupController.cs",
+              "ToolTip": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\ConsoleApplication\\Controllers\\GroupController.cs",
+              "RelativeToolTip": "ConsoleApplication\\Controllers\\GroupController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA0wJUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T17:07:58.738Z"
+              "WhenOpened": "2026-04-10T04:13:48.227Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -76,33 +49,23 @@
               "RelativeDocumentMoniker": "RepositoryLayer\\Repositories\\Implementations\\GroupRepository.cs",
               "ToolTip": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\RepositoryLayer\\Repositories\\Implementations\\GroupRepository.cs",
               "RelativeToolTip": "RepositoryLayer\\Repositories\\Implementations\\GroupRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwCgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T17:07:40.374Z"
+              "WhenOpened": "2026-04-09T17:07:40.374Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\RepositoryLayer\\Exceptions\\NotFoundException.cs",
-              "RelativeDocumentMoniker": "RepositoryLayer\\Exceptions\\NotFoundException.cs",
-              "ToolTip": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\RepositoryLayer\\Exceptions\\NotFoundException.cs",
-              "RelativeToolTip": "RepositoryLayer\\Exceptions\\NotFoundException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\ConsoleApplication\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\ConsoleApplication\\Program.cs",
+              "RelativeToolTip": "ConsoleApplication\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAwAAAC/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T17:05:43.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AppDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\RepositoryLayer\\Data\\AppDBContext.cs",
-              "RelativeDocumentMoniker": "RepositoryLayer\\Data\\AppDBContext.cs",
-              "ToolTip": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\RepositoryLayer\\Data\\AppDBContext.cs",
-              "RelativeToolTip": "RepositoryLayer\\Data\\AppDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T17:05:28.616Z"
+              "WhenOpened": "2026-04-09T16:50:44.975Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -112,82 +75,10 @@
               "RelativeDocumentMoniker": "ServiceLayer\\Services\\Implementations\\GroupService.cs",
               "ToolTip": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\ServiceLayer\\Services\\Implementations\\GroupService.cs",
               "RelativeToolTip": "ServiceLayer\\Services\\Implementations\\GroupService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA1wAUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAowCwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T17:00:33.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IGroupService.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\ServiceLayer\\Services\\Interfaces\\IGroupService.cs",
-              "RelativeDocumentMoniker": "ServiceLayer\\Services\\Interfaces\\IGroupService.cs",
-              "ToolTip": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\ServiceLayer\\Services\\Interfaces\\IGroupService.cs",
-              "RelativeToolTip": "ServiceLayer\\Services\\Interfaces\\IGroupService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T17:00:09.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\DomainLayer\\Entities\\Student.cs",
-              "RelativeDocumentMoniker": "DomainLayer\\Entities\\Student.cs",
-              "ToolTip": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\DomainLayer\\Entities\\Student.cs",
-              "RelativeToolTip": "DomainLayer\\Entities\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T16:53:39.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\ConsoleApplication\\Program.cs",
-              "RelativeDocumentMoniker": "ConsoleApplication\\Program.cs",
-              "ToolTip": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\ConsoleApplication\\Program.cs",
-              "RelativeToolTip": "ConsoleApplication\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T16:50:44.975Z",
+              "WhenOpened": "2026-04-10T06:22:42.71Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CourseGroup.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\DomainLayer\\Entities\\CourseGroup.cs",
-              "RelativeDocumentMoniker": "DomainLayer\\Entities\\CourseGroup.cs",
-              "ToolTip": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\DomainLayer\\Entities\\CourseGroup.cs",
-              "RelativeToolTip": "DomainLayer\\Entities\\CourseGroup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T16:53:57.476Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\DomainLayer\\Common\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "DomainLayer\\Common\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\DomainLayer\\Common\\BaseEntity.cs",
-              "RelativeToolTip": "DomainLayer\\Common\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T16:57:23.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\DomainLayer\\Class1.cs",
-              "RelativeDocumentMoniker": "DomainLayer\\Class1.cs",
-              "ToolTip": "C:\\Users\\Acer\\Desktop\\15-ConsoleApp\\ConsoleApp\\DomainLayer\\Class1.cs",
-              "RelativeToolTip": "DomainLayer\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T16:52:35.357Z"
             }
           ]
         }

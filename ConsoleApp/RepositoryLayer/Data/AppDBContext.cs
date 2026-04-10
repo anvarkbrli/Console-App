@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace RepositoryLayer.Data
 {
-    public class AppDBContext
+    public class AppDBContext<T>
     {
+        public static List<T> datas;
+        static AppDBContext()
+        {
+            datas = new List<T>();
+        }
     }
 }

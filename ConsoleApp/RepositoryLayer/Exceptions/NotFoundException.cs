@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace RepositoryLayer.Exceptions
 {
-    public class NotFoundException
+    public class NotFoundException :Exception
     {
+        public NotFoundException(string message) : base(message) { }
+
     }
 }

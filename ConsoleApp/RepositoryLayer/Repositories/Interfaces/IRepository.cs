@@ -11,7 +11,6 @@ namespace RepositoryLayer.Repositories.Interfaces
     {
         void Create(T data);
         void Update(T data);
-        List<T> GetById(Predicate<T> predicate);
         List<T> GetAllByTeacher(Predicate<T> predicate);
         List<T> GetAllByRoom(Predicate<T> predicate);
       
