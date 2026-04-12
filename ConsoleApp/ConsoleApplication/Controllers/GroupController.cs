@@ -158,7 +158,7 @@ namespace ConsoleApplication.Controllers
         }
         public void Delete() 
         {
-            GroupId: Helper.PrintColor(ConsoleColor.Blue, "Enter id to delete item:");
+            GroupId: Helper.PrintColor(ConsoleColor.Blue, "Enter id to delete group:");
             int id;
             string groupId = Console.ReadLine();
             bool isGroupId = int.TryParse(groupId, out id);
@@ -214,6 +214,11 @@ namespace ConsoleApplication.Controllers
             bool isGroupId = int.TryParse(groupId, out id);
             if (isGroupId)
             {
+                if (id <= 0)
+                {
+                    Helper.PrintColor(ConsoleColor.Red, "Room number cannot be 0 or less");
+                    goto GroupId;
+                }
                 CourseGroup group = groupService.GetById(id);
                 if (group != null)
                 {
@@ -228,7 +233,7 @@ namespace ConsoleApplication.Controllers
             }
             else
             {
-                Helper.PrintColor(ConsoleColor.Red, "Enter correct library Id type");
+                Helper.PrintColor(ConsoleColor.Red, "Enter correct group Id type");
                 goto GroupId;
             }
         }
@@ -261,6 +266,12 @@ namespace ConsoleApplication.Controllers
 
             while (isGroupRoom)
             {
+
+                if (groupRoom <= 0)
+                {
+                    Helper.PrintColor(ConsoleColor.Red, "Room number cannot be 0 or less");
+                    goto GroupRoom;
+                }
                 var group = groupService.GetAllGroupsByRoom(groupRoom);
                 if(group.Count > 0) 
                 {

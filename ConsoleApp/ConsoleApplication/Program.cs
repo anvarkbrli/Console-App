@@ -10,71 +10,42 @@ namespace ConsoleApplication
             GroupController groupController = new();
             StudentController studentController = new();
 
-            Helper.PrintColor(ConsoleColor.Blue, "Select an option for group operations:");
-        SelectOption: Helper.PrintColor(ConsoleColor.Yellow,"1 - Create group\n" +
-                      "2 - Get all groups\n" +
-                      "3 - Update group\n" +
-                      "4 - Delete group\n" +
-                      "5 - Get group by Id\n" +
-                      "6 - Get group by Teacher\n" +
-                      "7 - Get group by Room number\n" +
-                      "8 - Search group by name\n" +
-                      "9 - Create student\n" +
-                     "10 - Update student\n" +
-                     "11 - Get student by ID\n" +
-                     "12 - Delete student\n" +
-                     "13 - Get student by Age\n" +
-                     "14 - Get student by Group ID\n" +
-                     "15 - Search student by name or surname");
+            while(true)
+    {
+                Helper.ShowMenu();
+                string option = Console.ReadLine();
 
-            while (true)
-            {
-                string selectOption = Console.ReadLine();
-                int selectNumber;
-                bool isSelectOption = int.TryParse(selectOption, out selectNumber);
-
-                if (isSelectOption)
+                switch (option)
                 {
-                    switch (selectNumber)
-                    {
-                        case 1:
-                            groupController.Create();
-                            goto SelectOption;
-                        case 2:
-                            groupController.GetAll();
-                            goto SelectOption;
-                        case 3:
-                            groupController.Update();
-                            goto SelectOption;
-                        case 4:
-                            groupController.Delete();
-                            goto SelectOption;
-                        case 5:
-                            groupController.GetById();
-                            goto SelectOption;
-                        case 6:
-                            groupController.GetAllByTeacher();
-                            goto SelectOption;
-                        case 7:
-                            groupController.GetAllByRoom();
-                            goto SelectOption;
-                        case 8:
-                            groupController.Search();
-                            goto SelectOption;
-                        case 9:
-                            studentController.Create();
-                            goto SelectOption;
-                        
-                    }
-                }
-                else
-                {
-                    Helper.PrintColor(ConsoleColor.Red, "Enter a correct option type");
-                    goto SelectOption;
+                    case "1": groupController.Create(); break;
+                    case "2": groupController.GetAll(); break;
+                    case "3": groupController.Update(); break;
+                    case "4": groupController.Delete(); break;
+                    case "5": groupController.GetById(); break;
+                    case "6": groupController.GetAllByTeacher(); break;
+                    case "7": groupController.GetAllByRoom(); break;
+                    case "8": groupController.Search(); break;
 
+                    case "9": studentController.Create(); break;
+                    case "10": studentController.Update(); break;
+                    case "11": studentController.GetById(); break;
+                    case "12": studentController.Delete(); break;
+                    case "13": studentController.GetAllStudentsByAge(); break;
+                    case "14": studentController.GetAllStudentsByGroupId(); break;
+                    case "15": studentController.SearchStudent(); break;
+
+                    case "0":
+                        Console.WriteLine("Exiting...");
+                        return;
+
+                    default:
+                        Helper.PrintColor(ConsoleColor.Red, "Invalid option!");
+                        break;
                 }
 
-            } 
+                Console.WriteLine("\nPress any key to continue...");
+                Console.ReadKey();
+            }
         }
     }
 }

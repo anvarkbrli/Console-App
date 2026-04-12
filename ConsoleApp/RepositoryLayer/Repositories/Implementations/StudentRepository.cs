@@ -63,5 +63,11 @@ namespace RepositoryLayer.Repositories.Implementations
             existStudent.Age = data.Age;
             existStudent.CourseGroup = data.CourseGroup;
         }
+        public List<Student> SearchStudents(string name, string surname)
+        {
+            return AppDBContext<Student>.datas.Where(s => (string.IsNullOrWhiteSpace(name) || s.Name.ToLower().Contains(name.ToLower())) && (string.IsNullOrWhiteSpace(surname) || s.SurName.ToLower().Contains(surname.ToLower()))).ToList();
+            {
+            }
+        }
     }
 }

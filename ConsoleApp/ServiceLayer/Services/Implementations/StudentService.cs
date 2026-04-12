@@ -26,53 +26,50 @@ namespace ServiceLayer.Services.Implementations
             studentRepository.Create(student);
             return student;
         }
-
         public void DeleteStudent(int id)
         {
             Student student = GetById(id);
             studentRepository.Delete(student);
         }
-
+        public List<Student> GetAllStudents()
+        {
+            return studentRepository.GetAll();
+        }
         public List<Student> GetAllStudentsByAge(int age)
         {
-            throw new NotImplementedException();
+            return studentRepository.GetAllStudentsByAge(age);
         }
-
         public List<Student> GetAllStudentsByGroupId(int id)
         {
-            throw new NotImplementedException();
+             return studentRepository.GetAllStudentsByGroupId(id);
         }
-
         public Student GetById(int id)
         {
             Student student = studentRepository.Get(l => l.Id == id);
             if (student is null) return null;
             return student;
         }
-
         public List<Student> SearchStudent(string name, string surname)
         {
-            throw new NotImplementedException();
+            return studentRepository.SearchStudents(name, surname);
         }
-
-        //public List<Student> SearchStudent(string name, string surname)
-        //{
-        //    //if (string.IsNullOrWhiteSpace())
-        //    //{
-        //    //    return new List<Student>();
-        //    //}
-
-        //    //return studentRepository.GetAll()
-        //    //    .Where(s =>
-        //    //        s.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase) ||
-        //    //        s.Surname.Contains(searchText, StringComparison.OrdinalIgnoreCase))
-        //    //    .ToList();
-
-        //}
-
         public Student UpdateStudent(int id, Student student)
+    {
+        var existStudent = GetById(id);
+
+        if (existStudent == null)
         {
-            throw new NotImplementedException();
+            return null;
         }
+
+        existStudent.Name = student.Name;
+        existStudent.SurName = student.SurName;
+        existStudent.Age = student.Age;
+        existStudent.CourseGroup = student.CourseGroup;
+
+        studentRepository.Update(existStudent);
+
+        return existStudent;
     }
+}
 
