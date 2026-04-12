@@ -10,9 +10,9 @@ namespace RepositoryLayer.Repositories.Interfaces
     public interface IRepository<T> where T : class
     {
         void Create(T data);
+        void Delete(T data);
         void Update(T data);
-        List<T> GetAllByTeacher(Predicate<T> predicate);
-        List<T> GetAllByRoom(Predicate<T> predicate);
+      
       
     }
 }

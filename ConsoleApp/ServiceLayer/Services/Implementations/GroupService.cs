@@ -13,32 +13,47 @@ namespace ServiceLayer.Services.Implementations
         {
             groupRepository = new GroupRepository();
         }
-        public CourseGroup Create(CourseGroup courseGroup)
+        public CourseGroup CreateGroup(CourseGroup courseGroup)
         {
             courseGroup.Id = count;
+            var groups = groupRepository.GetAll();
+
+            while (groups.Any(g => g.Id == count))
+            {
+                count++;
+            }
+            courseGroup.Id = count;
             groupRepository.Create(courseGroup);
-            count++;
             return courseGroup;
+
         }
 
-        public void Delete(int id)
+        public void DeleteGroup(int id)
         {
             CourseGroup group = GetById(id);
+            groupRepository.Delete(group);
 
+        }
+        public List<CourseGroup> SearchGroup(string groupnName) 
+        {
+            return groupRepository.GetAll(l=> l.Name.ToLower().Trim() == groupnName.ToLower().Trim());
         }
         public List<CourseGroup> GetAll()
         {
             return groupRepository.GetAll();
         }
 
-        public List<CourseGroup> GetAllByRoom(int room)
+        public List<CourseGroup> GetAllGroupsByRoom(int room)
         {
-            throw new NotImplementedException();
+            if (room <= 0)
+                throw new ArgumentException("Room number must be greater than 0.");
+
+            return groupRepository.GetAllGroupsByRoom(m=> m.Room ==  room);
         }
 
-        public List<CourseGroup> GetAllByTeacher(string teacher)
+        public List<CourseGroup> GetAllGroupsByTeacher(string teacher)
         {
-            return groupRepository.GetAllByTeacher(m => m.Teacher.ToLower().Trim() == teacher.ToLower().Trim());
+            return groupRepository.GetAllGroupsByTeacher(m => m.Teacher.ToLower().Trim() == teacher.ToLower().Trim());
         }
 
         public CourseGroup GetById(int id)
@@ -48,9 +63,22 @@ namespace ServiceLayer.Services.Implementations
             return group;
         }
 
-        public CourseGroup Update(int id, CourseGroup courseGroup)
+        public CourseGroup UpdateGroup(int id, CourseGroup group)
         {
-            throw new NotImplementedException();
+            var existGroup = groupRepository.GetById(id);
+
+            if (existGroup == null)
+            {
+                return null;
+            }
+
+            existGroup.Name = group.Name;
+            existGroup.Teacher = group.Teacher;
+            existGroup.Room = group.Room;
+
+            groupRepository.Update(existGroup);
+
+            return existGroup;
         }
     }
 }

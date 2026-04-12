@@ -8,9 +8,24 @@ namespace ConsoleApplication
         static void Main(string[] args)
         {
             GroupController groupController = new();
+            StudentController studentController = new();
 
             Helper.PrintColor(ConsoleColor.Blue, "Select an option for group operations:");
-            SelectOption: Helper.PrintColor(ConsoleColor.Yellow, "1 - Create group, 2 - Get all groups, 3 - Update group, 4 - Delete, 5 - Get by Id, 6 - Get by Teacher, 7 - Get by Room number");
+        SelectOption: Helper.PrintColor(ConsoleColor.Yellow,"1 - Create group\n" +
+                      "2 - Get all groups\n" +
+                      "3 - Update group\n" +
+                      "4 - Delete group\n" +
+                      "5 - Get group by Id\n" +
+                      "6 - Get group by Teacher\n" +
+                      "7 - Get group by Room number\n" +
+                      "8 - Search group by name\n" +
+                      "9 - Create student\n" +
+                     "10 - Update student\n" +
+                     "11 - Get student by ID\n" +
+                     "12 - Delete student\n" +
+                     "13 - Get student by Age\n" +
+                     "14 - Get student by Group ID\n" +
+                     "15 - Search student by name or surname");
 
             while (true)
             {
@@ -43,6 +58,13 @@ namespace ConsoleApplication
                         case 7:
                             groupController.GetAllByRoom();
                             goto SelectOption;
+                        case 8:
+                            groupController.Search();
+                            goto SelectOption;
+                        case 9:
+                            studentController.Create();
+                            goto SelectOption;
+                        
                     }
                 }
                 else

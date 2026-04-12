@@ -37,22 +37,35 @@ namespace RepositoryLayer.Repositories.Implementations
         {
             return predicate != null ? AppDBContext<CourseGroup>.datas.FindAll(predicate) : AppDBContext<CourseGroup>.datas;
         }
-        public List<CourseGroup> GetAllByRoom(Predicate<CourseGroup> predicate)
+        public List<CourseGroup> GetAllGroupsByRoom(Predicate<CourseGroup> predicate)
         {
             return predicate != null ? AppDBContext<CourseGroup>.datas.FindAll(predicate) : new List<CourseGroup>();
 
         }
 
-        public List<CourseGroup> GetAllByTeacher(Predicate<CourseGroup> predicate)
+
+        public List<CourseGroup> GetAllGroupsByTeacher(Predicate<CourseGroup> predicate)
         {
-            throw new NotImplementedException();
+            return predicate != null ? AppDBContext<CourseGroup>.datas.FindAll(predicate) : new List<CourseGroup>();
+
         }
-
-     
-
         public void Update(CourseGroup data)
         {
-            throw new NotImplementedException();
+            var existGroup = AppDBContext<CourseGroup>.datas.Find(g => g.Id == data.Id);
+
+            if (existGroup == null)
+            {
+                throw new NotFoundException("Group not found");
+            }
+
+            existGroup.Name = data.Name;
+            existGroup.Teacher = data.Teacher;
+            existGroup.Room = data.Room;
+        }
+
+        public CourseGroup GetById(int id)
+        {
+            return AppDBContext<CourseGroup>.datas.FirstOrDefault(g => g.Id == id);
         }
     }
 }

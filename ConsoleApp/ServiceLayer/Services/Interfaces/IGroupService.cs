@@ -10,12 +10,13 @@ namespace ServiceLayer.Services.Interfaces
 {
     public interface IGroupService
     {
-        CourseGroup Create(CourseGroup courseGroup);
-        CourseGroup Update(int id,  CourseGroup courseGroup);
-        void Delete(int id);
+        CourseGroup CreateGroup( CourseGroup courseGroup);
+        CourseGroup UpdateGroup(int id,  CourseGroup courseGroup);
+        void DeleteGroup(int id);
+        List<CourseGroup> SearchGroup(string groupName);
         CourseGroup GetById(int id);
-        List<CourseGroup> GetAllByTeacher(string teacher);
-        List<CourseGroup> GetAllByRoom(int room);
+        List<CourseGroup> GetAllGroupsByTeacher(string teacher);
+        List<CourseGroup> GetAllGroupsByRoom(int room);
 
     }
 }
